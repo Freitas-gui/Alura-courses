@@ -4,6 +4,11 @@
 namespace App\Http\Controllers;
 
 
+use App\Episode;
+use App\Http\Requests\SeriesFormRequest;
+use App\Season;
+use App\Service\CreateOfSerie;
+use App\Service\RemoveOfSerie;
 use Illuminate\Http\Request;
 use App\Serie;
 
@@ -16,7 +21,6 @@ class SeriesController extends Controller
 
         $message = $request->session()->get('message');
 
-
         return view('series.index',compact('series', 'message'));
     }
 
@@ -25,13 +29,9 @@ class SeriesController extends Controller
         return view('series.create');
     }
 
-    public function store(Request $request)
+    public function store(SeriesFormRequest $request, CreateOfSerie $createOfSerie)
     {
-        $request->validate([
-            'name'=>'required|min:3'
-        ]);
-
-        $serie = Serie::create($request->all());
+        $serie = $createOfSerie->createSerie($request->name, $request->season_num, $request->episode_num);
         $request->session()->flash(
             "message",
             "Serie {$serie->id} created with success, name = {$serie->name}"
@@ -40,12 +40,12 @@ class SeriesController extends Controller
         return redirect()->route('index');
     }
 
-    public function destroy(Request $request)
+    public function destroy(Request $request, RemoveOfSerie $removeOfSerie)
     {
-        Serie::destroy($request->id);
+        $nameSerie = $removeOfSerie->removeSerie($request->id);
         $request->session()->flash(
             "message",
-            "Serie deleted with success"
+            "Serie {$nameSerie}  deleted with success"
         );
 
         return redirect()->route('index');
