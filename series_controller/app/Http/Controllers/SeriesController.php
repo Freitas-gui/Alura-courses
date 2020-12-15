@@ -50,4 +50,12 @@ class SeriesController extends Controller
 
         return redirect()->route('index');
     }
+
+    public function editName(int $id, Request $request)
+    {
+        $newName = $request->name;
+        $serie = Serie::find($id);
+        $serie->name = $newName;
+        $serie->save();
+    }
 }

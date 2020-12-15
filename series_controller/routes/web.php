@@ -17,4 +17,6 @@ Route::get('/series/create', 'SeriesController@create')->name('create');
 Route::post('/series/create', 'SeriesController@store')->name('store');
 Route::post('/series/delete/{id}', 'SeriesController@destroy')->name('destroy');
 Route::get('/series/{serieId}/seasons', 'SeasonsController@index')->name('seasonIndex');
+Route::post('/series/{id}/editName', 'SeriesController@editName')->name('editName');
+
 
