@@ -23,7 +23,7 @@ class CreateOfSerie
     {
         for ($i = 1; $i <= $season_num; $i++) {
             $season = $serie->seasons()->create(['number' => $i]);
-            $this->createEpisode($episode_num, $season, $i);
+            $this->createEpisode($episode_num, $season);
         }
     }
 

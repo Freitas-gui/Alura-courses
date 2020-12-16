@@ -16,6 +16,7 @@ class CreateEpisodesTable extends Migration
         Schema::create('episodes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('number');
+
             $table->integer('season_id');
 
             $table->foreign('season_id')

@@ -7,11 +7,8 @@
 
 @section('content')
 
-    @if (!empty($message))
-        <div class="alert alert-success">
-            {{ $message }}
-        </div>
-    @endif
+    @include('message',['message' => $message])
+
     <a href="{{route('create')}}" class="btn btn-dark mb-2"> Add </a>
     <ul class="list-group">
         @foreach($series as $serie)
@@ -61,7 +58,6 @@
                 document.getElementById(`input-serie-name-${serieId}`).removeAttribute('hidden');
                 document.getElementById(`serie-name-${serieId}`).hidden = true;
             }
-
         }
         function editSerie(serieId){
             let formData = new FormData();
