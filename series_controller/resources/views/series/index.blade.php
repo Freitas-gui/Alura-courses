@@ -9,7 +9,10 @@
 
     @include('message',['message' => $message])
 
+
+    @auth
     <a href="{{route('create')}}" class="btn btn-dark mb-2"> Add </a>
+    @endauth
     <ul class="list-group">
         @foreach($series as $serie)
         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -29,19 +32,19 @@
 
 
             <span class="d-flex">
-                <button class="btn btn-info btn-sm mr-2" onclick="toggleInput({{$serie->id}})">
-                    <i class="fas fa-edit"></i>
+                @auth
+                <button class="btn btn-info btn-sm mr-2 text-light" onclick="toggleInput({{$serie->id}})">
+                   edit
                 </button>
-                <a href="/series/{{$serie->id}}/seasons" class="btn btn-info btn-sm mr-2">
-                    <i class="fas fa-external-link-alt"></i>
+                @endauth
+                <a href="/series/{{$serie->id}}/seasons" class="btn btn-info btn-sm mr-2 text-light">
+                    info
                 </a>
-                <form method="post" action="/series/delete/{{$serie->id}}"
-                    onsubmit="return confirm('Are you sure?')">
-                    @csrf
-                    <button class="btn btn-danger flex btn-sm ">
-                        <i class="far fa-trash-alt"></i>
-                    </button>
-                </form>
+                @auth
+                <button class="btn btn-danger flex btn-sm text-light" onclick="youAreSure()">
+                    delete
+                </button>
+                @endauth
             </span>
         </li>
 
@@ -77,6 +80,49 @@
                 toggleInput(serieId);
             })
         }
+
+        function youAreSure(){
+
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                html:
+                    'If you '+
+                    '<b class="text-danger">delete</b>'+
+                    ' this Serie, this that it will be permanently ',
+                showCancelButton: true,
+                confirmButtonColor: '#dc3545',
+                cancelButtonColor: '#007bff',
+                cancelButtonText:
+                    '<button  class="btn btn-outline-primary>' +
+                    '<i class="text-light">Cancel</i>' +
+                    '</button>',
+                confirmButtonText:
+                    '@if(isset($serie))' +
+                        '<form method="post" action="/series/delete/{{$serie->id}}">' +
+                        '@csrf' +
+                        '<button  class="btn btn-outline-light>' +
+                        '<i class="text-light">Delete</i>' +
+                        '</button>' +
+                        '</form>' +
+                    '@endif',
+
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                }
+            })
+
+        }
+
+
+
+
     </script>
 @endsection
 

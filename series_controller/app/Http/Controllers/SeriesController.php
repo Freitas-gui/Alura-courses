@@ -14,6 +14,7 @@ use App\Serie;
 
 class SeriesController extends Controller
 {
+
     public function index(Request $request)
     {
 
