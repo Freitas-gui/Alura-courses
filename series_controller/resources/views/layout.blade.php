@@ -13,6 +13,9 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+    {{--Font Awesome--}}
+    <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
     <title>Series controller</title>
 </head>
 <body>

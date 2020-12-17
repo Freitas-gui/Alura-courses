@@ -34,15 +34,15 @@
             <span class="d-flex">
                 @auth
                 <button class="btn btn-info btn-sm mr-2 text-light" onclick="toggleInput({{$serie->id}})">
-                   edit
+                   <i class="fas fa-edit"></i>
                 </button>
                 @endauth
                 <a href="/series/{{$serie->id}}/seasons" class="btn btn-info btn-sm mr-2 text-light">
-                    info
+                    <i class="fas fa-info-circle"></i>
                 </a>
                 @auth
                 <button class="btn btn-danger flex btn-sm text-light" onclick="youAreSure()">
-                    delete
+                    <i class="fas fa-trash-alt"></i>
                 </button>
                 @endauth
             </span>
