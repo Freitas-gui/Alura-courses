@@ -27,11 +27,6 @@ abstract class Employee extends Person
         return $this->salary;
     }
 
-    public function calcBonus()
-    {
-        return $this->getSalary() * 0.01;
-    }
-
     public function upSalary(float $value)
     {
         if($value < 0){
@@ -41,4 +36,7 @@ abstract class Employee extends Person
         else
             $this->salary += $value;
     }
+
+    public abstract function calcBonus();
+
 }

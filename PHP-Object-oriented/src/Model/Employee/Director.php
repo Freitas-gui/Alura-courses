@@ -4,7 +4,9 @@
 namespace Alura\Model\Employee;
 
 
-class Director extends Employee
+use Alura\Authenticable;
+
+class Director extends Employee implements Authenticable
 {
     public function calcBonus()
     {

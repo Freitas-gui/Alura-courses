@@ -3,11 +3,10 @@
 require_once 'autoload.php';
 
 use Alura\Model\{Address, CPF};
+use Alura\Service\Authenticathor;
 use Alura\Model\Account\{Holder, AccountCurrent};
 use Alura\Service\EmployeeControl;
 use Alura\Model\Employee\{Manager, Director, Developer};
-
-
 
 $city1 = new Address("Alcobaça","Novelo","avenida 7","33");
 $city2 = new Address("Guriri","Norte","rua 9","754");
@@ -34,5 +33,8 @@ $employeeControl = new EmployeeControl();
 $employeeControl->addBonus($employee_1);
 $employeeControl->addBonus($employee_2);
 
-var_dump($employeeControl->getTotalBonus());
+$authenticathor = new Authenticathor();
+$authenticathor->tryLogin($employee_1,54321);
+
+var_dump($employee_1);
 
