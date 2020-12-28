@@ -6,7 +6,7 @@ require_once 'autoload.php';
 
 use Alura\Model\Account\Holder;
 
-class Account{
+abstract class Account{
     private $holder;
     private $balance;
     private static $quantity = 0;
@@ -44,7 +44,7 @@ class Account{
 
     public function withdraw (float $value)
     {
-        $tariff = $value * 0.05;
+        $tariff = $value * $this->rateValue();
         $value += $tariff;
         if($value > $this->balance) {
             echo "Not contains this value in Balance";
@@ -62,6 +62,8 @@ class Account{
         $this->withdraw($value);
         $destiny->deposit($value);
     }
+
+    protected abstract function rateValue():float;
 
 
 }
