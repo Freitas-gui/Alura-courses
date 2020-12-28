@@ -34,7 +34,7 @@ $employeeControl->addBonus($employee_1);
 $employeeControl->addBonus($employee_2);
 
 $authenticathor = new Authenticathor();
-$authenticathor->tryLogin($employee_1,54321);
+//$authenticathor->tryLogin($employee_1,54321);
 
-var_dump($employee_1);
+echo($city1);
 

@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef36d44-32d2-49c8-9aa9-90c463787d2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Authenticable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Employee/VideoEditor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/Authenticathor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank.php" beforeDir="false" afterPath="$PROJECT_DIR$/bank.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Employee/Developer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Employee/Developer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Employee/Director.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Employee/Director.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Employee/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Employee/Employee.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Employee/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Employee/Manager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +56,7 @@
       <workItem from="1608735274774" duration="13557000" />
       <workItem from="1609104714605" duration="5297000" />
       <workItem from="1609111215840" duration="10937000" />
-      <workItem from="1609186512128" duration="796000" />
+      <workItem from="1609186512128" duration="1060000" />
     </task>
     <servers />
   </component>

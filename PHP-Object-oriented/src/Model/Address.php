@@ -11,10 +11,10 @@ class Address
 
     public function __construct(string $city, string $neighborhood, string $street, string $number)
     {
-       $this->$city = $city;
-       $this->$neighborhood = $neighborhood;
-       $this->$street = $street;
-       $this->$number = $number;
+       $this->city = $city;
+       $this->neighborhood = $neighborhood;
+       $this->street = $street;
+       $this->number = $number;
     }
 
     public function getCity(): string
@@ -37,6 +37,9 @@ class Address
         return $this->number;
     }
 
-
+    public function __toString():string
+    {
+        return "{$this->street}, {$this->number}, {$this->neighborhood}, {$this->city}";
+    }
 
 }
