@@ -1,5 +1,7 @@
 <?php
 
+namespace Alura\Model;
+
 class CPF{
     private $value;
 

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef36d44-32d2-49c8-9aa9-90c463787d2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Account/Holder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Employee.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Person.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../series_controller/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../series_controller/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../series_controller/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../series_controller/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../series_controller/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../series_controller/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank.php" beforeDir="false" afterPath="$PROJECT_DIR$/bank.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Account/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CPF.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CPF.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Holder.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +38,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented" />
+      <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src\Model\Account" />
+      <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src\Model" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="bank.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/bank.php">
+    <configuration name="bank.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bank.php" scriptParameters="php bank.php">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHP Script.bank.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,6 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608735273692</updated>
       <workItem from="1608735274774" duration="13557000" />
+      <workItem from="1609104714605" duration="5297000" />
+      <workItem from="1609111215840" duration="2809000" />
     </task>
     <servers />
   </component>
@@ -67,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

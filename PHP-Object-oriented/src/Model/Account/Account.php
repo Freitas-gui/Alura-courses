@@ -1,13 +1,17 @@
 <?php
 
-require "src/Holder.php";
+namespace Alura\Model\Account;
+
+require_once 'autoload.php';
+
+use Alura\Model\Account\Holder;
 
 class Account{
     private $holder;
     private $balance;
     private static $quantity = 0;
 
-    public function __construct($holder)
+    public function __construct(Holder $holder)
     {
         $this->holder = $holder;
         $this->balance = 0;
@@ -40,6 +44,8 @@ class Account{
 
     public function withdraw (float $value)
     {
+        $tariff = $value * 0.05;
+        $value += $tariff;
         if($value > $this->balance) {
             echo "Not contains this value in Balance";
             return;
