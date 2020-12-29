@@ -2,7 +2,7 @@
 
 namespace Alura\Model;
 
-class CPF{
+final class CPF{
     private $value;
 
     public function __construct(string $value)

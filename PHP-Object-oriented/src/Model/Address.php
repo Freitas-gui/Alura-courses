@@ -2,8 +2,12 @@
 
 namespace Alura\Model;
 
-class Address
+use Alura\propertyAdvisor;
+
+final class Address
 {
+    use propertyAdvisor;
+
     private string $city;
     private string $neighborhood;
     private string $street;

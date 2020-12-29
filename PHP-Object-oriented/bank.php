@@ -36,5 +36,4 @@ $employeeControl->addBonus($employee_2);
 $authenticathor = new Authenticathor();
 //$authenticathor->tryLogin($employee_1,54321);
 
-echo($city1);
-
+echo($employee_1->salary);

@@ -4,10 +4,11 @@ namespace Alura\Model;
 
 require_once 'autoload.php';
 
-use Alura\Model\CPF;
+use Alura\propertyAdvisor;
 
 class Person
 {
+    use propertyAdvisor;
     protected string $name;
     public CPF $cpf;
 
@@ -33,7 +34,7 @@ class Person
         $this->name = $name;
     }
 
-    protected function nameValidator($name)
+    final protected function nameValidator($name)
     {
         if(strlen($name)<5)
             exit();

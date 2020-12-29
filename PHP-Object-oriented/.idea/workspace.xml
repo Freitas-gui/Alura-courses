@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef36d44-32d2-49c8-9aa9-90c463787d2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/propertyAdvisor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank.php" beforeDir="false" afterPath="$PROJECT_DIR$/bank.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/CPF.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CPF.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Employee/Employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Employee/Employee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../series_controller/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../series_controller/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +32,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../series_controller" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src" />
+      <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src\Model" />
       <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src\Model\Employee" />
       <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src\Service" />
       <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented" />
-      <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src\Model\Account" />
-      <recent name="C:\Users\Freit\Desktop\Alura-courses\PHP-Object-oriented\src\Model" />
     </key>
   </component>
   <component name="RunManager">
@@ -56,7 +61,7 @@
       <workItem from="1608735274774" duration="13557000" />
       <workItem from="1609104714605" duration="5297000" />
       <workItem from="1609111215840" duration="10937000" />
-      <workItem from="1609186512128" duration="1060000" />
+      <workItem from="1609186512128" duration="5827000" />
     </task>
     <servers />
   </component>

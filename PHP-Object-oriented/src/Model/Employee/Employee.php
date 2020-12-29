@@ -5,8 +5,10 @@ namespace Alura\Model\Employee;
 use Alura\Model\CPF;
 use Alura\Model\Person;
 
+
 abstract class Employee extends Person
 {
+
     private string $office;
     private float $salary;
 
