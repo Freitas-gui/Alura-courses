@@ -16,7 +16,7 @@ class CreateSeasonsTable extends Migration
         Schema::create('seasons', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('number');
-            $table->integer('serie_id');
+            $table->bigInteger('serie_id')->unsigned()->index();
 
             $table->foreign('serie_id')
                 ->references('id')

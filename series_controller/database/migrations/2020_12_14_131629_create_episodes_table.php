@@ -17,7 +17,7 @@ class CreateEpisodesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('number');
 
-            $table->integer('season_id');
+            $table->bigInteger('season_id')->unsigned()->index();;
 
             $table->foreign('season_id')
                 ->references('id')

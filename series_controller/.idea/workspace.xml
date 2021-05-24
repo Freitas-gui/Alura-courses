@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23be6e0c-5497-4bc9-8dd6-e96ecdf838a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PHP-Object-oriented/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PHP-Object-oriented/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_11_181423_create_table_series.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_11_181423_create_table_series.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_131616_create_seasons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_131616_create_seasons_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_131629_create_episodes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_131629_create_episodes_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
